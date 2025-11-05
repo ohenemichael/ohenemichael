@@ -4,23 +4,17 @@
     "slug": "medbook",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#149BFF"
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.medbook.app"
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#149BFF"
       },
       "package": "com.medbook.app",
@@ -32,22 +26,18 @@
       ]
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "bundler": "metro"
     },
     "plugins": [
-      "expo-router",
-      [
-        "expo-notifications",
-        {
-          "icon": "./assets/notification-icon.png",
-          "color": "#149BFF"
-        }
-      ]
+      "expo-router"
     ],
     "scheme": "medbook",
     "extra": {
       "router": {
         "origin": false
+      },
+      "eas": {
+        "projectId": "your-project-id"
       }
     }
   }
