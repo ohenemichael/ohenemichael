@@ -65,8 +65,8 @@ MedBook is a comprehensive doctor appointment booking system designed specifical
 - **Language**: TypeScript
 - **Database**: PostgreSQL with Prisma ORM
 - **Authentication**: JWT with bcryptjs
-- **File Storage**: Firebase Storage
-- **Push Notifications**: Firebase Cloud Messaging
+- **File Storage**: Cloudinary (images, documents)
+- **Push Notifications**: Expo Push Notifications
 - **Payment**: Flutterwave & MTN Mobile Money
 - **Styling**: Tailwind CSS
 
@@ -97,7 +97,8 @@ ohenemichael/
 │   │   ├── prisma.ts         # Database client
 │   │   ├── auth.ts           # Auth utilities
 │   │   ├── payments.ts       # Payment integrations
-│   │   └── firebase-admin.ts # Firebase admin
+│   │   ├── cloudinary.ts     # Cloudinary file storage
+│   │   └── notifications.ts  # Expo push notifications
 │   ├── middleware/
 │   │   └── auth.ts           # Auth middleware
 │   ├── prisma/
@@ -135,7 +136,7 @@ ohenemichael/
 ### Prerequisites
 - Node.js 18+ and npm
 - PostgreSQL database
-- Firebase project
+- Cloudinary account (free tier available)
 - Flutterwave account
 
 ### Backend Setup
@@ -224,13 +225,15 @@ The database includes the following main models:
 - **Review**: Doctor reviews and ratings
 - **Notification**: Push notifications
 
-### Firebase Setup
+### Cloudinary Setup
 
-1. Create a Firebase project at https://console.firebase.google.com
-2. Enable Cloud Messaging for notifications
-3. Enable Storage for file uploads
-4. Download service account JSON
-5. Add to environment variables
+1. Create a free account at https://cloudinary.com
+2. Get your credentials from the dashboard:
+   - Cloud Name
+   - API Key
+   - API Secret
+3. Add to environment variables in `.env`
+4. See [CLOUDINARY_SETUP.md](CLOUDINARY_SETUP.md) for detailed guide
 
 ## 📚 API Documentation
 
@@ -442,8 +445,9 @@ DATABASE_URL=              # PostgreSQL connection string
 JWT_SECRET=                # Secret key for JWT
 FLUTTERWAVE_PUBLIC_KEY=    # Flutterwave public key
 FLUTTERWAVE_SECRET_KEY=    # Flutterwave secret key
-FIREBASE_SERVICE_ACCOUNT=  # Firebase service account JSON
-FIREBASE_STORAGE_BUCKET=   # Firebase storage bucket
+CLOUDINARY_CLOUD_NAME=     # Cloudinary cloud name
+CLOUDINARY_API_KEY=        # Cloudinary API key
+CLOUDINARY_API_SECRET=     # Cloudinary API secret
 PAYMENT_REDIRECT_URL=      # Payment callback URL
 APP_LOGO_URL=             # App logo URL
 FRONTEND_URL=             # Frontend URL for CORS

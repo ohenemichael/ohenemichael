@@ -117,6 +117,14 @@ class ApiService {
     const response = await this.api.patch(`/notifications/${id}/read`);
     return response.data;
   }
+
+  // Upload endpoints
+  async getUploadSignature(folder?: string) {
+    const response = await this.api.get('/upload/signature', {
+      params: { folder },
+    });
+    return response.data;
+  }
 }
 
 export default new ApiService();
