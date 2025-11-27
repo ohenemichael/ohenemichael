@@ -88,15 +88,20 @@ Full-stack e-commerce platform with real-time inventory management
 - **Tech:** Asp.net, Entity Framework, Mysql, Postgres,Open Ai
 - **Features:** User authentication, Ai integration, admin dashboard, role-based access
 
-### 🌐 [Airbnb Clone] (https://github.com/ohenemichael/app)
-Full stack Airbnb Clone
-- **Tech:** Next.js, TypeScript, PostgreSQL, Tailwind CSS
+### 🌐 [Shopping App] (https://github.com/ohenemichael/shoply)
+Full stack Mobile Shopping Application
+- **Tech:** Next.js, TypeScript, PostgreSQL, Tailwind CSS, React Native.
 - **Features:** Analytics visualization, post scheduling, multi-platform support
 
 ### 🔧 [School Management System] (https://github.com/ohenemichael/SMS)
 Full-stack school management platform with real-time student management
 - **Tech:** Asp.net, Entity Framework, Mysql, Postgres,Open Ai
 - **Features:** User authentication, Ai integration, admin dashboard, role-based access
+
+### 🔧 [Petty Cash Management System] (https://github.com/ohenemichael/MSME)
+Full-stack petty cash management platform with real-time float/cash management
+- **Tech:** Asp.net, Entity Framework, Mysql, Postgres,Open Ai
+- **Features:** User authentication, admin dashboard, role-based access,OCR integration.
 
 ---
 
