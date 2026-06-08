@@ -83,7 +83,7 @@ I'm a full-stack developer who loves turning ideas into reality through code. Cu
 
 </div>
 
-### 🎯 [Pharmacy Management System] (https://github.com/ohenemichael/PIMS)
+### 🎯 [Pharmacy Management System] (https://github.com/ohenemichael/PharmacyManagementSystem)
 Full-stack e-commerce platform with real-time inventory management
 - **Tech:** Asp.net, Entity Framework, Mysql, Postgres,Open Ai
 - **Features:** User authentication, Ai integration, admin dashboard, role-based access
